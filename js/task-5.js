@@ -13,7 +13,9 @@ function getRandomHexColor() {
 }
 
 function handleClick() {
-  bodyColor.style.backgroundColor = getRandomHexColor();
-  spanColor.textContent = getRandomHexColor();
+  const totalColor = getRandomHexColor();
+  bodyColor.style.backgroundColor = totalColor;
+  spanColor.textContent = totalColor;
+  
   return;
 }
